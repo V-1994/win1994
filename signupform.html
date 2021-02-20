@@ -1,0 +1,73 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Sign up Form</title>
+  </head>
+  <body>
+  <center>
+<form action="/signupform.html" method="get" id="text">
+<fieldset style="width:500px; text-align:center;">
+ <legend><h1> Sign Up Form </h1></legend>
+	<table cellspacing="30">
+  <tbody>
+    <tr>
+  <td>User Name: </td>
+  <td><input type="text" placeholder="User Name" name="uname" autofocus ></td>
+    </tr>
+    <tr>
+      <td><label for="Pswd">Password:</label></td>
+      <td> <input type="password" id="Pswd" name="pwd" placeholder="password..." pattern="(?@.*\d)(?@.*[a-z])(?@.*[A-Z]).{8,}" 
+	  title="Must contain at least one number and one uppercase and lowercase, and atleast 8 or more characters" maxlength="8"></td> 
+    </tr>
+    <tr>
+      <td><label for="cPswd">Confirm Password:</label></td>
+      <td> <input type="password" id="cPswd" name="cpwd" placeholder="Confirm password..." maxlength="8"></td>
+    </tr>
+	<tr>
+	<td><label>DOB:</label></td>
+	<td><input type="date" placeholder="dd-mm-yyyy" min="01-01-1990" max="01-01-1994"></td>
+    </tr>
+    <tr>
+        <td><label>Gender:</label></td>
+      <td>
+        <input type="radio" id="male" name="gender" value="male" >
+		<label for="male"> Male</label>
+				
+		<input type="radio" id="fmale" name="gender" value="fmale">
+		<label for="fmale"> Female </label>
+      </td>
+    </tr>
+    <tr>
+      <td>Email id: </td>
+      <td><input type="mail" id="mail" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" title="Example@domain.com" autocomplete> 
+      </td>
+    </tr>
+    
+	<tr>
+	<td><label for="phone">Enter your phone number:</label></td>
+      <td>
+        <select>
+          <option>+91</option>
+          <option>+92</option>
+          <option>+93</option>
+          <option>+94</option>
+          <option>+95</option>
+          <option>+96</option>
+        </select>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Numbers only">	
+		</td>
+		</tr>
+		<tr>
+		<td Colspan="2" style="text-align:center">
+		<button type="submit" value="submit">Sign up</button>
+		<button type="reset" value="reset">Clear</button>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  </fieldset>
+  </form>
+  </center>
+  </body>
+</html>
+ 

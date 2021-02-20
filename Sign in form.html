@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<TITLE>Sign in Form</TITLE></head>
+<body>
+<center>
+<form action="/signinform.html" method="get" id="text">
+<h1> Sign in Form </h1>
+	<table cellspacing="30">
+  <tbody>
+    <tr> 
+	<td>User Name: </td>
+  <td><input type="text" placeholder="User Name" name="uname" autofocus ></td>
+    </tr>
+    <tr>
+      <td><label for="Pswd">Password:</label></td>
+      <td> <input type="password" id="Pswd" name="pwd" placeholder="password..." pattern="(?@.*\d)(?@.*[a-z])(?@.*[A-Z]).{8,}" 
+	  title="Must contain at least one number and one uppercase and lowercase, and atleast 8 or more characters" maxlength="8"></td> 
+    </tr>
+	 <tr>
+		<td Colspan="2" style="text-align:center">
+		<button type="submit" value="submit">Sign in</button>
+		<button type="forget password" value="forget password">forget password</button>
+  </td>
+  </tr>
+          
+  </tbody>
+</table>
+</form>
+</center>
+</body>
+</html>
