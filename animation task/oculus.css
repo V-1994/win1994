@@ -1,0 +1,183 @@
+.rectangle{
+display: flex;
+width:50%;
+height:80%;
+background-color:#fbf7f7cf;
+position:absolute;
+padding-left:90px;
+padding-right:90px;
+margin-left:18%;
+margin-top:4%;
+}
+.small .btn{
+	display:inline-block;
+	background:yellow;
+	color:white;
+	font-size:1.0rem;
+	padding:17px 46px;
+	margin-left:-40%;
+	margin-top:120.5%;
+	width:116px;
+	height:20px;
+	text-align:center;
+	text-decoration:none;
+	white-space:nowrap;
+	animation-name:scaleup;
+	animation-duration: 2s;
+	animation-timing-function:ease-out;
+}
+.slide-up{
+	overflow:hidden;
+}
+.slide-up>.btn{
+	transform:translateY(-100%);
+	transition:.4s ease-in-out;
+}
+@keyframes scaleup{
+	0%{transform:scaleY(70px);}
+	100%{transform:scaleY(0px);}
+}
+.small .btn1{
+	color:grey;
+	font-size:0.8rem;
+	padding:16px 61px;
+	margin-left:-30%;
+	margin-top:103%;
+	margin-right:23%;
+	width:116px;
+	height:20px;
+	text-align:center;
+	text-decoration:none;
+	white-space:nowrap;
+}
+.small .btn2{
+	display:inline-block;
+	border:1px solid #f525ee;
+	color:#f525ee;
+	font-size:0.9rem;
+	padding:16px 65px;
+	margin-left:-1%;
+	margin-top:102%;
+	width:116px;
+	height:20px;
+	text-align:center;
+	text-decoration:none;
+	animation-name:moveit;
+	animation-duration: 2s;
+	animation-timing-function:ease-out;
+	animation-delay:3s;
+	
+	
+}
+@keyframes moveit{
+	 0%{transform:translateY(70px);}
+	100%{transform:translateY(0px);}
+}
+.small .btn3{
+	display:inline-block;
+	background-color:#f525ee;
+	color:white;
+	font-size:0.9rem;
+	padding:16px 79px;
+	margin-left:3%;
+	margin-top:102%;
+	width:116px;
+	height:20px;
+	text-align:center;
+	text-decoration:none;
+	animation-name:moveit;
+	animation-duration: 2s;
+	animation-timing-function:ease-out;
+	animation-delay:3s;
+}
+.small{
+	display: flex;
+    width:42%;
+    height:85%;
+    background-color:white;
+    position:absolute;
+    padding-left:120px;
+    padding-right:120px;
+    margin-top:4%;
+    margin-left:5%;
+	animation-name:extend;
+	animation-duration: 2s;
+	animation-timing-function:ease-out;
+	animation-fill-mode:forwards;
+	transition: opacity 0.5s linear;
+}
+@keyframes extend{
+	0%{transform:translateX(0px);}
+	100%{transform:translateX(50px);}
+}
+
+.big{
+	display:flex;
+    width:16%;
+    height:58%;
+    background-color:yellow;
+	color:black;
+    position:absolute;
+    padding-left:120px;
+    padding-right:120px;
+    margin-top:10%;
+    margin-left:38%;
+	animation-name:extend;
+	animation-duration: 2s;
+	animation-timing-function:ease-out;
+	animation-fill-mode:forwards;
+	transition: opacity 0.5s linear;
+}
+.big h3{
+	text-decoration:none;
+	white-space:nowrap;
+	margin-left:-57%;
+	margin-top:36%;
+}
+.big h6{
+	text-decoration:none;
+	white-space:nowrap;
+	margin-left:-89%;
+	margin-top:56%;
+	opacity:20%;
+}
+.big p{
+	text-decoration:none;
+	white-space:nowrap;
+	margin-left:-167%;
+	margin-top:84%;
+	font-size:0.9rem;
+}
+.big img{
+	height:auto;
+	width:auto;
+	margin-left:-131%;
+	margin-top:-87%;
+}
+.big .container{
+	display:block;
+	position:relative;
+	font-size:10px;
+	cursor:pointer;
+	margin-top:24%;
+	margin-left:0%;
+	margin-bottom:12px;
+	padding-left:35px;
+	user-select:none;
+}
+.big .container input{
+	position:absolute;
+	opacity:0;
+	cursor:pointer;
+	height:0;
+	width:0;
+}
+/* create a custom checkbox*/
+.big .container .checkmark{
+	position:absolute;
+	top:-1px;
+	left:15px;
+	height:15px;
+	width:15px;
+	background-color:#eee;
+}
